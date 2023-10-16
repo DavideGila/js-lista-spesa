@@ -6,6 +6,15 @@
 
 const listaSpesa = [];
 
-let domanda = prompt ('Cosa vuoi acquistare?');
-listaSpesa.push(domanda);
 console.log(listaSpesa);
+let stop = false;
+
+while (!stop){
+    let domanda = prompt ('Cosa vuoi acquistare?');
+
+    if (domanda === 'stop'){
+        stop = true
+    } else {
+        listaSpesa.push(domanda);
+    }
+};

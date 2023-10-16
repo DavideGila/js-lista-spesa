@@ -6,6 +6,7 @@
 
 const listaSpesa = [];
 
+let lista = document.getElementById('lista');
 console.log(listaSpesa);
 let stop = false;
 
@@ -18,3 +19,7 @@ while (!stop){
         listaSpesa.push(domanda);
     }
 };
+
+for (let i = 0; i < listaSpesa.length; i++) {
+    lista.innerHTML = listaSpesa;
+}
